@@ -1,0 +1,16 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package icare.policy.service.grpc;
+
+message Policy{
+	int32 id = 1;
+	string policyHolder = 2;
+	string lob = 3;
+	string status = 4;
+	string maturityDate = 5;
+	string maturityAmt = 6;
+}
+
+service PolicyService{
+	rpc apply(Policy) returns (Policy);
+}
