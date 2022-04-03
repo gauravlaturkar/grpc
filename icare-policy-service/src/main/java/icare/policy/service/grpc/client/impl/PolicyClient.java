@@ -21,7 +21,7 @@ public class PolicyClient {
 
         applyPolicy(channel);
 
-        System.out.println("Shutting down channel");
+        System.out.println("Client is shutting down");
         channel.shutdown();
 
     }
